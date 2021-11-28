@@ -2,7 +2,7 @@ body{
     font-family: Verdana, Calibri, sans-serif;
     margin: 0px;
     padding: 0px;
-    background-image: url(fondsite.jpg);
+    background-image: url(black1.jpg);
     background-size: 100%;
 }
 h1{
@@ -87,6 +87,12 @@ nav > ul > li:hover a{
 
     background-color: red;
 }
+
+.menu-sql .submenu{
+
+    background-color: lightgreen;
+}
+
 .submenu li:hover a{
     color: #EEE;
     font-weight: bold;
@@ -103,6 +109,10 @@ nav > ul > li:hover a{
 
 .menu-ppe .submenu li:hover{
     background-color: #81C8FF;
+}
+
+.menu-sql .submenu li:hover{
+    background-color: lightblue;
 }
 
 nav input[=type=checkbox]:checked ~ ul{
