@@ -2,32 +2,25 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Page d'accueil</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale">
+	<title>Menu responsive déroulant HTML / CSS</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-
-<body>
-	<h1><u>HTML ET CSS<u></h1>
-	<nav>
-
-		<label for="menu-mobile" class="menu-mobile">Menu</label>
-		<input type="checkbox" name="menu-mobile" role="button">
-
-
-		<ul>
-	     <li class="menu-metiers"><a href="#">Les Métiers</a>
-			<ul class="submenu">
+	<body>
+		<nav>
+			<label for="menu-mobile" class="menu-mobile">Menu</label>
+			<input type="checkbox" id="menu-mobile" role="button">
+			<ul>
+				<li class="menu-metiers"><a href="#">HTML</a>
+					<ul class="submenu">
 			  <li><a href="dev.html">Développeur</a></li>
 			  <li><a href="devapp.html">Développeur d'applications</a></li>
 			  <li><a href="admin.html">Administrateur de réseaux</a></li>
 			  <li><a href="gestiondon.html">Gestionnaire de base de donnée</a></li>
-
 			</ul>
-			</li>
-
-		<li class="menu-travaux"><a href="#">Divers</a>
+				</li>
+			<li class="menu-travaux"><a href="#">Divers</a>
 
 			<ul class="submenu">
 			  <li><a href="formulaire.html">Formulaire</a></li>
@@ -38,18 +31,7 @@
 			</ul>
 			</li>
 
-		<li class="menu-tp"><a href="#">Les TP</a>
-
-			<ul class="submenu">
-				<li><a href="index1.html">CSS 1</a></li>
-				<li><a href="index2.html">CSS 2</a></li>
-				<li><a href="index6.html"> CV</a></li>
-				<li><a href="siteiframe.html">TP IFRAME</a></li>
-				<li><a href="pagecss.html"> CSS 5</a></li>
-			</ul>
-			</li>
-
-			<li class="menu-java"><a href="#">Javascript</a>
+				<li class="menu-java"><a href="#">Javascript</a>
 			<ul class="submenu">
 				<li><a href="js1.html">JS1</a></li>
 				<li><a href="js2.html">JS2</a></li>
@@ -62,14 +44,30 @@
                 <li><a href="exo.html">Calcul article</a></li>
                 <li><a href="inputjs.html">Calcul Somme</a></li>
                 <li><a href="calcul.html">Calcul2</a></li>
-                 <li><a href="texte.html">Text</a></li>
-		<li><a href="connexion.html">Connexion</a></li>
-		<li><a href="espace.html">Nombre d'espace</a></li>
-		<li><a href="pair.html">Impair et pair</a></li>
+                <li><a href="texte.html">Text</a></li>
+                <li><a href="verticale.html">Text verticale</a></li>
+                <li><a href="permutation.html">Permutation</a></li>
+                <li><a href="majmin.html">Maj et Min</a></li>
+ 				<li><a href="concatenation.html">Concatenation</a></li>
+ 				<li><a href="connexion2.html">Connexion2</a></li>
+ 				<li><a href="connexion1.html">Connexion</a></li>
+ 				<li><a href="pair_impair.html">Pair et Impair</a></li>
 			</ul>
 		   </li>
 
-            <li class="menu-ppe"><a href="#">PPE</a>
+
+				<li class="menu-tp"><a href="#">Les TP</a>
+
+			<ul class="submenu">
+				<li><a href="index1.html">CSS 1</a></li>
+				<li><a href="index2.html">CSS 2</a></li>
+				<li><a href="index6.html"> CV</a></li>
+				<li><a href="siteiframe.html">TP IFRAME</a></li>
+				<li><a href="pagecss.html"> CSS 5</a></li>
+			</ul>
+			</li>
+
+			<li class="menu-ppe"><a href="#">PPE</a>
 			<ul class="submenu">
 				<li><a href="portfolio.html">Portfolio</a></li>
 				<li><a href="facture.html">Facture</a></li>
@@ -78,8 +76,7 @@
             </ul>
         </li>
 
-
-             <li class="menu-sql"><a href="#">PHP/SQL</a>
+        <li class="menu-sql"><a href="#">PHP/SQL</a>
 			<ul class="submenu">
 				<li><a href="sql1.html">SQL1</a></li>
 				<li><a href="sql2.html">SQL2</a></li>
@@ -88,11 +85,12 @@
          </li>
            
 
+				<li class="menu-contact"><a href="#">Contact</a></li>
+			</ul>
+		</nav>
 
 
-		</ul>
-	</nav>
-	<div class="d1"></div>
+			<div class="d1"></div>
 	<div class="conteneur">
 		<div class="d2"></div>
   </div> 
