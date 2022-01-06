@@ -1,0 +1,231 @@
+body
+{
+	background-image: url(b3.png);
+	background-position: top left, left;
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: Verdana, Calibri, sans-serif;
+	margin: 0px;
+	padding: 0px;
+}
+nav > ul
+{
+	margin: 0px;
+	padding: 0px;
+}
+nav li
+{
+	list-style-type: none;
+}
+nav > ul > li
+{
+	float: left;
+	position: relative;
+}
+.submenu
+{
+	display: none;
+}
+nav input[type=checkbox]
+{
+	display: none;
+}
+.menu-mobile
+{
+	display: none;
+}
+nav
+{
+	width: 100%;
+	background-color: #424558;
+}
+nav > ul::after
+{
+	content: "";
+	display: table;
+	clear: both;
+}
+nav a
+{
+	display: inline-block;
+	text-decoration: none;
+}
+nav > ul > li > a
+{
+	padding: 20px 30px;
+	color: #FFF;
+}
+nav li:hover .submenu
+{
+	display: inline-block;
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	padding: 0px;
+	z-index: 100000;
+}
+.submenu li
+{
+	border-bottom: 1px solid #CCC;
+}
+.submenu li a
+{
+	padding: 15px 30px;
+	font-size: 13px;
+	color: #222538;
+	width: 270px;
+}
+.menu-html:hover
+{
+	border-top: 5px solid lightblue;
+	background-color: blue;
+}
+.menu-iframe:hover
+{
+	border-top: 5px solid lightblue;
+	background-color: blue;
+}
+.menu-css:hover
+{
+	border-top: 5px solid lightblue;
+	background-color: blue;
+}
+.menu-menu:hover
+{
+	border-top: 5px solid lightblue;
+	background-color: blue;
+}
+.menu-cv:hover
+{
+	border-top: 5px solid lightblue;
+	background-color: blue;
+}
+.menu-sq:hover
+{
+	border-top: 5px solid lightblue;
+	background-color: blue;
+}
+.menu-ppe:hover
+{
+	border-top: 5px solid lightblue;
+	background-color: blue;
+}
+nav > ul > li:hover a
+{
+	padding: 15px 30px 20px 30px;
+}
+.menu-html .submenu
+{
+	background-color: lightblue;
+}
+.menu-iframe .submenu
+{
+	background-color: lightblue;
+}
+.menu-css .submenu
+{
+	background-color: lightblue;
+}
+.menu-menu .submenu
+{
+	background-color: lightblue;
+}
+.menu-cv .submenu
+{
+	background-color:  lightblue;
+}
+.menu-sq .submenu
+{
+	background-color:  lightblue;
+}
+.menu-ppe .submenu
+{
+	background-color: lightblue;
+}
+.menu-javascript:hover
+{
+	border-top: 5px solid lightblue;
+	background-color: blue;
+}
+.menu-javascript .submenu
+{
+	background-color: lightblue;
+}
+.menu-javascript .submenu li:hover
+{
+	background-color: royalblue;
+}
+
+.submenu li:hover
+{
+	color: #EEE;
+	font-weight: bold;
+}
+.menu-html .submenu li:hover
+{
+	background-color: royalblue;
+}
+.menu-iframe .submenu li:hover
+{
+	background-color: royalblue;
+}
+.menu-css .submenu li:hover
+{
+	background-color: royalblue;
+}
+.menu-menu .submenu li:hover
+{
+	background-color: royalblue;
+}
+.menu-cv .submenu li:hover
+{
+	background-color: royalblue;
+}
+.menu-sq .submenu li:hover
+{
+	background-color: royalblue;
+}
+.menu-ppe .submenu li:hover
+{
+	background-color: royalblue;
+}
+nav input[type=checkbox]:checked ~ ul
+{
+	display: block;
+}
+
+@media screen and (max-width : 680px)
+{
+	.menu-mobile
+	{
+		display: block;
+		color: #fff;
+		background-color: grey;
+		text-align: center;
+		padding: 12px 0;
+	}
+	nav ul
+	{
+		display: none;
+	}
+
+	nav ul
+	{
+		display: none;
+	}
+	nav ul li, nav ul li a 
+	{
+		width: 100%;
+		text-align: center;
+		padding-left:0px ;
+	}
+	nav ul li a, nav ul li:hover a
+	{
+		padding: 10px 0px 10px 0px;
+	}
+	nav li:hover .submenu
+	{
+		display: block;
+		position: static;
+	}
+}

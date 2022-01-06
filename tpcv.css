@@ -4,7 +4,7 @@ body{
 }
 
 .page{
-	background-image: url(cv1.jpg);
+	background-color: grey;
 	background-size: 100%;
 	border: 5px solid red;
 	border-radius: 10px;
@@ -27,7 +27,6 @@ body{
 .infos{
 	border: 0px solid;
 	float: left;
-	color: black;
 	padding: 20px;
 
 }
@@ -132,9 +131,10 @@ h2{
 
 	font-size: 20px;
 	color: orangered;
+	font-weight: bold;
 }
 
 .p2{
 	font-size: 20px;
-	color: black;
+	
 }

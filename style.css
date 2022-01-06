@@ -1,294 +1,223 @@
-body
-{
-	font-family: Verdana, Calibbri, sans-serif;
-	margin: 0px;
-	padding: 0px;
-	background-color: black;
-    background-size: 100%;
-    color: white;
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
 }
-
-nav
-{
-	width: 100%;
-	background-color: #1B2631;
+html {
+  scroll-behavior: smooth;
 }
-
-nav > ul
-{
-	margin: 0px;
-	padding: 0px;
+body{
+  font-family: montserrat;
+  background-color: lightblue;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
-
-nav > ul::after
-{ 
-	content: "";
-	display: table;
-	clear: both;
+nav{
+  background: steelblue;
+  height: 80px;
+  width: 100%;
 }
-
-nav li 
-{
-	list-style-type: none;
+label.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
 }
-
-nav > ul > li 
-{
-	float: left;
-	position: relative;
+nav ul{
+  float: right;
+  margin-right: 20px;
 }
-
-nav a
-{
-	display: inline-block;
-	text-decoration: none;
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
 }
-
-nav > ul > li > a
-{
-	padding: 20px;
-	color: #FFF;
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
 }
-
-nav > ul > li:hover a 
-{
-	padding: 15px 30px 20px 30px;
+a.active,a:hover{
+  background: lightblue;
 }
-
-/* Menus */
-.menu-metiers:hover
-{
-	
-	background-color: black;
-	transition-duration: 0.3s;
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
 }
-
-.menu-travaux:hover
-{
-	
-	background-color:  black;
-	transition-duration: 0.3s;
+#check{
+  display: none;
 }
-
-.menu-tp:hover
-{
-	
-	background-color:  black;
-	transition-duration: 0.3s;
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
 }
-
-.menu-java:hover
-{
-	
-	background-color: black;
-	transition-duration: 0.3s;
-}
-
-.menu-ppe:hover{
-	
-	background-color: black;
-	transition-duration: 0.3s;
-}
-
-.menu-sql:hover{
-	
-	background-color: black;
-	transition-duration: 0.3s;
-}
-
-/* Sous-Menus */
-.menu-metiers .submenu
-{
-	background-color: lightslategray;
-}
-
-.menu-travaux .submenu
-{
-	background-color:  lightslategray;
-}
-
-.menu-tp .submenu
-{
-	background-color:  lightslategray;
-}
-.menu-java .submenu
-{
-	background-color: lightslategray;
-}
-
-.menu-ppe .submenu{
-	background-color: lightslategray;
-}
-
-.menu-sql .submenu{
-	background-color: lightslategray;
-}
-
-
-.menu-metier .submenu li:hover
-{
-	background-color:lightslategray;
-}
-
-.menu-travaux .submenu li:hover
-{
-	background-color: lightslategray;	
-}
-
-.menu-tp .submenu li:hover
-{
-	background-color: lightslategray;
-}
-
-.menu-java .submenu li:hover
-{
-	background-color: lightslategray;
-}
-
-.menu-ppe .submenu li:hover
-{
-	background-color: lemonslategray;
-}
-
-.menu-sql .submenu li:hover
-{
-	background-color: lightslategray;
-}
-.submenu li 
-{
-	border-bottom: 1px solid #CCC;
-}
-
-.submenu li a 
-{
-	padding: 15px 30px;
-	font-size: 13px;
-	color: #fff;
-	width: 270px;
-}
-
-.submenu li:hover a 
-{
-	font-weight: bold;
-}
-
-.submenu
-{
-	display: none;
-}
-
-nav li:hover .submenu
-{
-	display: inline-block;
-	position: absolute;
-	top: 100%;
-	left: 0px;
-	padding: 0px;
-	z-index: 100000;
-}
-
-/* Mobile */
-.menu-mobile
-{
-	display: none;
-}
-
-nav input[type=checkbox]
-{
-	display: none;
-}
-
-nav input[type=checkbox]:checked ~ ul
-{
-	display: block;
-}
-
-@media screen and (max-width: 680px)
-{
-	.menu-mobile
-	{
-		display: block;
-		color: #fff;
-		background-color: rgba(29, 197, 151, 0.97);
-		text-align: center;
-		padding: 12px 0;
-	}
-
-	nav ul 
-	{
-		display: none;
-	}
-
-	nav ul li, nav ul li a 
-	{
-		width: 15%;
-		text-align: center;
-	}
-
-	nav ul li a, nav ul li:hover a 
-	{
-		padding: 10px 0px 10px 0px;
-	}
-
-	nav li:hover .submenu
-	{
-		display: block;
-		position: static;
-
-
-	}
-}
-
-.d1{
-    width: 1300px;
-    height: 700px;
-    margin: 50px auto;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    animation: fondu 30s ease-in-out infinite both;
-}
-
-.conteneur{
-    max-width: 1000px;
-    margin: 50px auto;
-}
-
-@keyframes fondu{
-    0%{background-image: url("diapo1.png");}
-    33.33%{background-image: url("diapo2.jpg");}
-    66.67%{background-image: url("diapo3.jpeg");}
-    100%{background-image: url("diapo1.png");}
-}
-
-
-
-label{
-    color: white;
-    text-decoration: underline;
-}
-
-.pmoi{
-    color: white;
-}
-
-
-
-.contact1{
-    border:  0px solid white;
-}
-.position1{
+@media (max-width: 1300px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: steelblue;
+    top: 80px;
+    left: -100%;
     text-align: center;
-    margin-top: -88px;
-    border-right: 0px solid white;
-    
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: lightblue;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
 }
 
-.map{
-    text-align: right;
-    margin-top: -105px;
-    padding-right: 30px;
 
+.patterns {
+  height: 100vh;
 }
 
 
 
+svg text {
+  font-family: Lora;
+  letter-spacing: 10px;
+  stroke: royalblue;
+  font-size: 150px;
+  font-weight: 700;
+  stroke-width: 6;
+  animation: textAnimate 10s infinite alternate;
+  
+}
+
+@keyframes textAnimate {
+  0% {
+    stroke-dasharray: 0 50%;
+    stroke-dashoffset:  20%;
+    fill:hsl(189, 68%, 75%,0%)
+
+  }
+  
+  100% {
+    stroke-dasharray: 50% 0;
+    stroke-dashoffstet: -20%;
+    fill: hsla(189, 68%, 75%,0%)
+  } 
+}
+
+/*booton*/
+
+
+section {
+ 
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scroll-down {
+  height: 50px;
+  width: 30px;
+  border: 2px solid black;
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.scroll-down::before,
+.scroll-down::after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  height: 10px;
+  width: 10px;
+  transform: translate(-50%, -100%) rotate(45deg);
+  border: 2px solid black;
+  border-top: transparent;
+  border-left: transparent;
+  animation: scroll-down -10s ease-in-out infinite;
+}
+.scroll-down::before {
+  top: 30%;
+  animation-delay: 0.7s;
+  /* animation: scroll-down 1s ease-in-out infinite; */
+}
+
+
+
+
+
+
+/*PARTIE PRESENTATION*/
+
+.propos1{
+  margin-bottom: 100px;
+  margin: auto;
+}
+.p1{
+  font-size: 2em;
+  text-decoration: underline;
+  color: red;
+  margin: auto;
+}
+.p2{
+  text-align: justify;
+  font-size: 1.5em;
+  margin: auto;
+  color: black;
+}
+
+.bts_sio{
+  margin-top: 20px;
+  margin: auto;
+}
+
+.bts_sio3{
+ font-size: 1.6em;
+ margin: auto;
+ color: black ;
+}
+
+.sisr{
+  border: 2px solid black;
+  width: 700px;
+  padding: 10px;
+}
+
+.slam{
+  border: 2px solid black;
+  width: 700px;
+  height: 540px;
+  margin-left: 800px;
+  margin-top: -545px;
+  padding: 10px;
+}
